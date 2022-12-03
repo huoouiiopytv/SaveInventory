@@ -55,8 +55,6 @@ public class SaveInventory extends JavaPlugin implements Listener {
         this.saveDefaultConfig();
         this.loadSettings();
         
-        if(this.bStats) new Metrics(this, 9925);
-        
         this.getCommand("saveinventory").setExecutor(new Commands(this));
         this.getCommand("saveinventory").setTabCompleter(new CommandsTab());
         this.getServer().getPluginManager().registerEvents((Listener)this, (Plugin)this);
